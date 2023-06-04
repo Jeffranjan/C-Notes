@@ -1,23 +1,26 @@
-// #include<stdio.h>
-// int main()
-// {   
-//     int age;
-//     printf("Enter a number: ");
-//     scanf("%d", &age);
+//// If/else statements
+#include<stdio.h>
+int main()
+{   
+    int age;
+    printf("Enter a number: ");
+    scanf("%d", &age);
     
-//     if (age >= 18)
-//     {
-//         printf("You are eligible to vote");
-//     }
+    if (age >= 18)
+    {
+        printf("You are eligible to vote");
+    }
     
-//     else
-//     {
-//         printf("You are not eligible to vote");
-//     }
+    else
+    {
+        printf("You are not eligible to vote");
+    }
     
-// }
+}
 
-// Switch Case Program
+
+
+//// Switch Case Program
 // #include<stdio.h>
 // int main()
 // {   
@@ -47,45 +50,40 @@
 //     return 0;
 // }
 
-// price Obtained Program
+
+
+//// Program to calculate grades using if/else statements
 // #include <stdio.h>
 
 // int main() {
 
-//     int price;
-//     printf("Enter your price: ");
-//     scanf("%d", &price);
+//     int grade;
+//     printf("Enter your grade: ");
+//     scanf("%d", &grade);
 
-//     if (price < 30 && price >= 0) {
+//     if (grade < 30 && grade >= 0) {
 //         printf("You got C grade");
 //     }
 
-//     else if (price >= 30 && price < 70) {
+//     else if (grade >= 30 && grade < 70) {
 //         printf("You got B grade");
 //     }
 
-//     else if (price >= 70 && price < 90) {
+//     else if (grade >= 70 && grade < 90) {
 //         printf("You got A grade");
 //     }
-//     else if (price >= 90 && price <= 100) {
+//     else if (grade >= 90 && grade <= 100) {
 //         printf("You got A+ grade");
 //     }
 //     else {
-//         printf("Invalid price");
+//         printf("Invalid grade");
 //     }
 //     return 0;
 // }
 
-// #include<stdio.h>
-// int main() {
-// int x = 2;
-// if (x == 1) {
-// printf("x is equal to 1");
-// } else {
-// printf("x is not equal to 1");
-// }
-// }
 
+
+//// Program to calculate whethere the given alphabet charachter is uppercase or lowercase 
 // #include <stdio.h>
 
 // int main(){
@@ -102,9 +100,10 @@
 //     else {
 //         printf("%c is not a letter", letter);
 //     }
-//     }
+// }
 
-// For Loop
+
+//// For Loop
 // #include <stdio.h>
 
 // int main () {
@@ -115,7 +114,9 @@
 //     return 0;
 // }
 
-// Whilte Loop
+
+
+// // While Loop
 // #include <stdio.h>
 // int main () {
 //     int n;
@@ -130,6 +131,8 @@
 //     return 0;
 // }
 
+
+//// Program to print numbers in reverse and then add them usuing for loops
 // #include <stdio.h>
 // int n;
 // int main() {
@@ -146,6 +149,8 @@
 // }
 
 
+
+//// Program to print numbers in reverse and then add them usuing while loop
 // #include <stdio.h>
 // int main() {
 //     int n;
@@ -154,7 +159,7 @@
 //     int sum = 0;
 //     int j = n; 
 //     while (j > 0){
-//        sum = sum + j;
+//        sum += j;
 //        printf("%d \n", j);
 //        j--; 
 //     }
@@ -162,17 +167,21 @@
 //     return 0;
 // }
 
+
+// //// Program to calculate multiples of a numbers
+// #include <stdio.h>
 // int main () {
 //     int n;
 //     printf("Enter a number: ");
 //     scanf("%d", &n);
 
-//     for (int i = 1; i <= 10; i++)
+//     for (int i = 1; i <= n; i++)
 //     {
 //         printf("%d \n", n*i); 
 //     }
 //     return 0;
 // }
+
 
 // Break Statement
 // #include <stdio.h>
@@ -193,6 +202,8 @@
 //     return 0;
 // }
 
+
+//// Program to determine whether a number is a multiple of 7 or not 
 // #include <stdio.h>
 // int main () {
 //     int n;
@@ -215,7 +226,9 @@
 //     return 0;
 // }
 
-// Contiue Statement
+
+
+//// Contiue Statement - Printing all the odd numbers from 5 to 50
 // #include <stdio.h>
 // int main () {
 //     // int n;
@@ -224,7 +237,7 @@
 
 //     for (int i = 5; i <= 50; i++) {
 //         if (i % 2 == 0) {  
-//            continue;           /*Printing all the odd numbers from 5 to 50*/
+//            continue;          
 //         }
         
 //         printf("%d \n", i);
@@ -232,7 +245,8 @@
 //     return 0;
 // }
 
-//  Finding the factorial of a number 
+
+////  Finding the factorial of a number 
 // #include <stdio.h>
 // int main () {
 //     int n;
@@ -247,7 +261,7 @@
 //     return 0;
 // }
 
-// Program for calculating average of 3 numbers
+//// Program for calculating average of 3 numbers
 // #include <stdio.h>
 // int main () {
 //     float x, y, z;
@@ -259,7 +273,7 @@
 // }
 
 
-// Write a C program to check if given character is digit or not.
+//// Write a C program to check if given character is digit or not.
 // #include <stdio.h>
 // #include <ctype.h>
 
@@ -279,6 +293,7 @@
 // }
 
 
+//// Program to determine the smallest number between two given numbers
 // #include<stdio.h>
 // int main() {
 //     int x, y;
@@ -295,6 +310,9 @@
 //     }
 // }
 
+
+
+// // Program to determine whether the given number is natural or not
 // #include<stdio.h>
 // int main() {
 //     int x;
@@ -312,7 +330,7 @@
 // }
 
 
-// Creating a star patter with given number of rows and columns
+//// Creating a star pattern with given number of rows and columns
 // #include<stdio.h>
 // int main() {
 //     int rows, columns;
@@ -323,7 +341,7 @@
 //     for (i = 1; i <= rows; i++)
 //     {   
 //         for (j = 1; j <= columns; j++)
-//         {
+//         {s
 //             printf("*");
 //         }
         
@@ -333,9 +351,9 @@
 //     return 0;
 // }
 
-// Functions
-// #include <stdio.h>
 
+//// Functions
+// #include <stdio.h>
 // void printNamaste();
 // void printBonjour();
 
@@ -364,7 +382,9 @@
 //     printf("Bonjour!\n");
 // }
 
-// Summing up numbers using a function
+
+
+//// Summing up two numbers using a function
 // #include <stdio.h>
 // int sum(int x, int y);
 // int main() {
@@ -379,9 +399,11 @@
 //     return x + y;
 // }
 
-// Summing up numbers using a function
+
+
+// // Program for calculating - square, area of circle, area of square and area of rectangle using functions
 // #include <stdio.h>
-// #include <math.h>
+// // #include <math.h>
 // float square(float x);
 // float circleArea (float r);
 // float squareArea (float s);
@@ -414,7 +436,8 @@
 // }
 
 
-// factorial using recurssion
+
+//// factorial using recurssion
 // #include <stdio.h>
 // int fact(int n);
 
@@ -432,6 +455,8 @@
 // }
 
 
+
+// //  A program to convert celcius into Faherenheit and to determine whether the temperature is normal, hot or cold
 // #include <stdio.h>
 
 // float convertTemp(float c);
@@ -460,27 +485,7 @@
 
 
 
-// #include <stdio.h>
-// void doWork (int a, int b);
-
-// int main () {
-//     int a = 3, b = 5;
-//     doWork(a, b);
-
-//     return 0;
-// }
- 
-// void doWork (int a, int b) {
-//     int sum = a + b;
-//     int product = a * b;
-//     int average = (a*b)/2;
-
-//     printf("The sum is %d\n", sum);
-//     printf("The product is %d\n", product);
-//     printf("The average is %d\n", average);
-// }
-
-
+// // Program to calculate the su,, product and average of two integers 
 // #include <stdio.h>
 // void doWork (int a, int b, int *sum, int *product, int *average);
 
@@ -529,7 +534,9 @@
 //     }
 // }
 
-// Arrays
+
+
+//// Arrays
 // #include <stdio.h>
 
 // int main() {
@@ -552,25 +559,10 @@
 //     printf("Laptop Price: %f, Smartphone Price: %f, Tablet Price: %f", price[0], price[1], price[2]);
     
 //     return 0;
-// }
+// }   
 
-// #include <stdio.h>
 
-// int main() {
-//     int n;
-//     printf("Enter the number: ");
-//     scanf("%d", &n);
-
-//     int fact = 1;
-    
-//     for (int i = 1; i <= n; i++) {
-//         fact = fact * i;
-//     }
-//     printf("%d", fact);
-
-//     return 0;
-// }       
-
+// Write a program to display a given string in a pattern (using ‘‘LOOP’’ control statement) :
 // #include <stdio.h>
 // #include <string.h>
 
@@ -589,7 +581,7 @@
 // }
 
 
-// Write a program to find the minimum marks among the given marks of 20 students.
+//// Write a program to find the minimum marks among the given marks of 20 students.
 // #include <stdio.h>
 // #define SIZE 20
 
@@ -622,31 +614,50 @@
 //     return minimum;
 // }
 
-#include <stdio.h>
 
-int stringLength(const char *str) {
-    // Function to calculate the length of a string
 
-    int length = 0;  // Initialize length to 0
+//// Function to calculate the length of a string with strlen 
+// #include <stdio.h>
+// int stringLength(const char *str) {
 
-    // Iterate through the string until the null character is encountered
-    while (*str != '\0') {
-        length++;   // Increment length
-        str++;      // Move to the next character in the string
-    }
+//     int length = 0;  // Initialize length to 0
 
-    return length;  // Return the final length of the string
-}
+//     // Iterate through the string until the null character is encountered
+//     while (*str != '\0') {
+//         length++;   // Increment length
+//         str++;      // Move to the next character in the string
+//     }
 
-int main() {
-    char str[100];  // Declare a character array to store the string
+//     return length;  // Return the final length of the string
+// }
 
-    printf("Enter a string: ");
-    scanf("%s", str);  // Read the input string from the user
+// int main() {
+//     char str[100];  // Declare a character array to store the string
 
-    int length = stringLength(str);  // Call the stringLength function to calculate the length
+//     printf("Enter a string: ");
+//     scanf("%s", str);  // Read the input string from the user
 
-    printf("Length of the string: %d\n", length);  // Print the length of the string
+//     int length = stringLength(str);  // Call the stringLength function to calculate the length
 
-    return 0;
-}
+//     printf("Length of the string: %d\n", length);  // Print the length of the string
+
+//     return 0;
+// }
+
+
+// Explain the function ‘‘call by reference’’ in C language. Give advantages and disadvantages of it.
+// In C programming language, "call by reference" is a method of passing arguments to a function where the actual memory address of the variables is passed to the function parameters. In other words, instead of passing the values themselves, the memory addresses (pointers) of the variables are passed. This allows the function to directly access and modify the original variables in the calling code.
+
+// To use call by reference, you need to pass the address of the variables using pointers. The function parameters should be declared as pointer variables, and inside the function, you can manipulate the values at the memory locations pointed to by those pointers.
+
+// Advantages of call by reference:
+
+// Modification of arguments: Call by reference allows a function to modify the values of variables in the calling code. Any changes made to the referenced variables inside the function are reflected in the original variables.
+// Efficiency: Call by reference avoids unnecessary memory duplication when passing large structures or arrays to functions. It saves memory and improves performance since no additional memory is required to store copies of the arguments.
+// Multiple return values: Call by reference allows a function to return multiple values by modifying the referenced variables.
+// Disadvantages of call by reference:
+
+// Side effects: Since call by reference modifies the original variables, it can have unintended side effects if not used carefully. It can make the code harder to understand and debug, especially when multiple functions are involved.
+// Indirect access: Call by reference introduces indirect access to variables through pointers, which can be error-prone if not handled correctly. It requires a good understanding of pointers and careful management of memory addresses.
+// Overwriting data accidentally: If the function modifies the referenced variables carelessly, it can accidentally overwrite data in the calling code, leading to unexpected behavior or bugs.
+// Overall, call by reference is useful when you need to modify variables inside a function or when you want to avoid the overhead of copying large data structures. However, it requires careful handling of pointers and consideration of potential side effects.
