@@ -1,22 +1,22 @@
 //// If/else statements
-#include<stdio.h>
-int main()
-{   
-    int age;
-    printf("Enter a number: ");
-    scanf("%d", &age);
+// #include<stdio.h>
+// int main()
+// {   
+//     int age;
+//     printf("Enter a number: ");
+//     scanf("%d", &age);
     
-    if (age >= 18)
-    {
-        printf("You are eligible to vote");
-    }
+//     if (age >= 18)
+//     {
+//         printf("You are eligible to vote");
+//     }
     
-    else
-    {
-        printf("You are not eligible to vote");
-    }
+//     else
+//     {
+//         printf("You are not eligible to vote");
+//     }
     
-}
+// }
 
 
 
@@ -534,9 +534,47 @@ int main()
 //     }
 // }
 
-
-
 //// Arrays
+// // Program to print array items
+// #include <stdio.h>
+
+// int main () {
+//     int arr[] = {1, 2, 3, 4, 5};
+//     for (int i = 0; i < 5; i++) {
+//         printf("%d\n", arr[i]);
+//     }
+    
+// }
+
+// // C program to give inputs as an array items and then print it
+// #include <stdio.h>
+
+// #define MAX_SIZE 100  // Define a macro for the maximum size of the array
+
+// int main() {
+//     int arr[MAX_SIZE];  // Declare an array to store the elements
+//     int size;  // Variable to store the number of elements
+
+//     printf("Enter the number of elements (up to %d): ", MAX_SIZE);
+//     scanf("%d", &size);  // Read the number of elements from the user
+
+//     printf("Enter the elements:\n");
+//     for (int i = 0; i < size; i++) {
+//         printf("Element %d: ", i + 1);
+//         scanf("%d", &arr[i]);  // Read each element from the user
+//     }
+
+//     printf("The array elements are:\n");
+//     for (int i = 0; i < size; i++) {
+//         printf("%d ", arr[i]);  // Print each element of the array
+//     }
+
+//     return 0;
+// }
+
+
+
+//// Program to add GST in the given array of products prices
 // #include <stdio.h>
 
 // int main() {
@@ -560,6 +598,26 @@ int main()
     
 //     return 0;
 // }   
+
+// // Printing Array using functions
+// #include <stdio.h>
+
+// void printNumbers(int *arr, int n);
+
+// int main () {
+//     int arr[] = {1, 2, 3, 4, 5, 6};
+//     printNumbers(arr, 6);
+
+//     return 0;
+// }
+
+// void printNumbers(int *arr, int n) {
+//     for (int i = 0; i < n; i++) {
+//         printf("%d\t", arr[i]);
+//     }
+//     printf("\n");
+// }
+
 
 
 // Write a program to display a given string in a pattern (using ‘‘LOOP’’ control statement) :
@@ -661,3 +719,149 @@ int main()
 // Indirect access: Call by reference introduces indirect access to variables through pointers, which can be error-prone if not handled correctly. It requires a good understanding of pointers and careful management of memory addresses.
 // Overwriting data accidentally: If the function modifies the referenced variables carelessly, it can accidentally overwrite data in the calling code, leading to unexpected behavior or bugs.
 // Overall, call by reference is useful when you need to modify variables inside a function or when you want to avoid the overhead of copying large data structures. However, it requires careful handling of pointers and consideration of potential side effects.
+
+
+
+// // Function to determine how many numbers odd numbers are there in an array
+// #include <stdio.h>
+// #define SIZE 6
+// int oddCounter(int arr[], int n);
+
+
+// int main() {
+//     int arr[SIZE];
+//     printf("Enter %d numbers: ", SIZE);
+//     for (int i = 0; i < SIZE; i++) {
+//         printf("Number %d ", i + 1 );
+//         scanf("%d", &arr[i]);
+//     }
+    
+//     printf("%d", oddCounter(arr, SIZE));
+
+//     return 0;
+// }
+
+// int oddCounter(int arr[], int n) {
+//     int count = 0;
+//     for (int i = 0; i < n; i++) {
+//         if (arr[i] % 2 != 0) {
+//             count++;
+//         }
+        
+//     }
+//     return count;
+// }
+
+
+// // Multi-Dimentional Arrays
+// #include <stdio.h>
+
+// int main() {
+//     int marks[2][3];
+
+//     marks[0][0] = 89;
+//     marks[0][1] = 89;
+//     marks[0][2] = 89;
+
+//     marks[1][0] = 89;
+//     marks[1][1] = 89;
+//     marks[1][2] = 89;
+
+//     printf("%d",marks[0][0]);
+// }
+
+
+// // Function to count the occurrences of a number 'x' in an array 'arr'
+// #include <stdio.h>
+
+// #define SIZE 10
+
+
+// int countOccurrences(int arr[], int size, int x) {
+//     int count = 0; // Initialize a counter variable to keep track of occurrences
+    
+//     // Iterate over each element in the array
+//     for (int i = 0; i < size; i++) {
+//         if (arr[i] == x) { // Check if the current element is equal to 'x'
+//             count++; // Increment the count if a match is found
+//         }
+//     }
+    
+//     return count; // Return the final count
+// }
+
+// int main() {
+//     int arr[SIZE] = {2, 5, 6, 3, 9, 2, 5, 8, 2, 4}; // Array of numbers
+//     int x; // Number to count occurrences of
+
+//     printf("Enter the number to count occurrences: ");
+//     scanf("%d", &x); // Read the number from the user
+
+//     int occurrences = countOccurrences(arr, SIZE, x); // Call the function to count occurrences
+//     printf("Number of occurrences of %d: %d\n", x, occurrences); // Print the result
+
+//     return 0;
+// }
+
+
+// // Write a program to print the largest number in an array.
+// #include <stdio.h>
+
+// #define SIZE 10
+
+// int findLargestNumber(int arr[], int size) {
+//     int largest = arr[0]; // Assume the first element as the largest
+    
+//     // Iterate over each element in the array
+//     for (int i = 1; i < size; i++) {
+//         if (arr[i] > largest) { // Compare current element with the largest
+//             largest = arr[i]; // Update largest if current element is greater
+//         }
+//     }
+    
+//     return largest; // Return the largest number
+// }
+
+// int main() {
+//     int arr[SIZE] = {3, 9, 5, 2, 8, 1, 7, 6, 4, 10}; // Array of numbers
+
+//     int largestNumber = findLargestNumber(arr, SIZE); // Call the function to find the largest number
+//     printf("The largest number is: %d\n", largestNumber); // Print the result
+
+//     return 0;
+// }
+
+
+// // Strings
+// #include <stdio.h>
+
+// void printString(const char arr[]);
+
+// int main() {
+//     const char firstName[] = "Ranjan";
+//     const char lastName[] = "Gupta";
+
+//     printString(firstName);
+//     printString(lastName);
+
+//     return 0;
+// }
+
+// void printString(const char arr[]) {
+//     for (int i = 0; arr[i] != '\0'; i++) {
+//         printf("%c", arr[i]);
+//     }
+//     printf("\n");
+// }
+
+
+// // Strings
+// #include <stdio.h>
+
+// int main() {
+//     char name[50];
+//     scanf("%s", name);
+//     printf("Your name is %s", name);
+
+//     return 0;
+// }
