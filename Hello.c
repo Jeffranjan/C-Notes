@@ -1241,7 +1241,7 @@
 
 
 // Write a C program to mantain a record of ‘‘n’’ student details using an array of structures with structure-variables (Rollnumber, Name, Marks1, Marks2, Marks3, Marks4 and Grade). Define each field of the structure with appropriate datatype. Print the marks of the student of given Rollnumber as input.
-#include <stdio.h>
+// #include <stdio.h>
 
 // Student structure to store student details
 // Roll number, name, marks in 4 subjects, and grade
