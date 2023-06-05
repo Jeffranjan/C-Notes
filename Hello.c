@@ -865,3 +865,463 @@
 
 //     return 0;
 // }
+
+// // Printing String length using strlen
+// #include <stdio.h>
+// #include <string.h>
+
+// int main () {
+//     char name[] = "Ranjan";
+//     int length =  strlen(name);
+//     printf("Length is: %d", length);
+
+//     return 0;
+// }
+
+
+// Printing string length without strlen function
+// #include <stdio.h>
+// int countLength(char arr[]);
+
+// int main() {
+//     char name[100];
+//     fgets(name, 100, stdin);
+//     printf("Length is %d\n", countLength(name));
+//     return 0;
+// }
+
+// int countLength(char arr[]) {
+//     int count = 0;
+//     for (int i = 0; arr[i] != '\0'; i++) {
+//         count++;
+//     }
+//     return count - 1;
+// }
+
+// FIle I/O
+// #include <stdio.h>
+
+// int main() {
+//     FILE *fptr;
+//     fptr = fopen("newText.txt", "w");
+//     if (fptr == NULL) {
+//         printf("File doesn't exist");
+//     } else {
+//          fclose(fptr);
+//     }
+    
+//     return 0;
+// }
+
+
+// // Reading a file with char
+// #include <stdio.h>
+
+// int main() {
+//     FILE *fptr;
+//     fptr = fopen("Text.txt", "r");
+
+//     char ch;
+//     fscanf(fptr, "%c", &ch);
+//     printf("The character = %c\n", ch);
+//     fscanf(fptr, "%c", &ch);
+//     printf("The character = %c\n", ch);
+//     fscanf(fptr, "%c", &ch);
+//     printf("The character = %c\n", ch);
+//     fscanf(fptr, "%c", &ch);
+//     printf("The character = %c\n", ch);
+//     fscanf(fptr, "%c", &ch);
+//     printf("The character = %c\n", ch);
+//     fscanf(fptr, "%c", &ch);
+//     printf("The character = %c\n", ch);
+
+//     return 0;
+// }
+
+
+
+// // Reading a file with numbers
+// #include <stdio.h>
+
+// int main() {
+//     FILE *fptr;
+//     fptr = fopen("newText.txt", "r");
+
+//     char ch;
+//     fscanf(fptr, "%d", &ch);
+//     printf("The character = %d\n", ch);
+//     fscanf(fptr, "%d", &ch);
+//     printf("The character = %d\n", ch);
+//     fscanf(fptr, "%d", &ch);
+//     printf("The character = %d\n", ch);
+//     fscanf(fptr, "%d", &ch);
+
+//     return 0;
+// }
+
+
+// // Wring a File 
+// #include <stdio.h>
+
+// int main() {
+//     FILE *fptr;
+//     fptr = fopen("Text.txt", "w");
+
+//     fprintf(fptr, "%c" , 'M');
+//     fprintf(fptr, "%c" , 'A');
+//     fprintf(fptr, "%c" , 'N');
+//     fprintf(fptr, "%c" , 'G');
+//     fprintf(fptr, "%c" , 'O');
+    
+//     fclose(fptr);
+//     return 0;
+// }
+
+
+// // Appending a File
+// #include <stdio.h>
+
+// int main() {
+//     FILE *fptr;
+//     fptr = fopen("Text.txt", "a");
+
+//     fprintf(fptr, "%c" , 'M');
+//     fprintf(fptr, "%c" , 'A');
+//     fprintf(fptr, "%c" , 'N');
+//     fprintf(fptr, "%c" , 'G');
+//     fprintf(fptr, "%c" , 'O');
+    
+//     fclose(fptr);
+//     return 0;
+// }
+
+//// Miscellaneous 
+//// Enumerated Data Types - Enumeration (or enum) is a user defined data type in C. It is mainly used to assign names to integral constants, the names make a program easy to read and maintain.
+// #include <stdio.h>
+// enum week {Monday, Tueday, Wednesday, Thurday, Friday, Saturday, Sunday};
+
+// int main () {
+//     enum week day;
+//     day = Friday;
+//     printf("%d", Friday);
+
+//     return 0;
+// }
+
+
+// #include <stdio.h>
+// enum week {Monday, Tueday, Wednesday, Thurday, Friday, Saturday, Sunday};
+
+// int main () {
+//     for (int i = Monday; i <= Sunday; i++) {
+//         printf("%d", i);
+//     }
+//     return 0;
+// }
+
+
+//// Macros in C - A macro is a name given to a block of C statements as a pre-processor directive. Being a pre-processor, the block of code is communicated to the compiler before entering into the actual coding (main () function).
+// #include <stdio.h>
+// #define NUM 10
+
+// int main() {
+//     printf("%d", NUM);
+//     return 0;
+// }   
+
+// // C program to illustrate macros
+// #include <stdio.h>
+
+// // Macro definition
+// #define LIMIT 5
+
+// // Driver Code
+// int main()
+// {
+// 	// Print the value of macro defined
+// 	printf("The value of LIMIT"
+// 		" is %d",
+// 		LIMIT);
+
+// 	return 0;
+// }
+
+
+
+// // C program to illustrate macros
+// #include <stdio.h>
+ 
+// // Macro definition
+// #define AREA(l, b) (l * b)
+ 
+// // Driver Code
+// int main()
+// {
+//     // Given lengths l1 and l2
+//     int l1 = 10, l2 = 5, area;
+ 
+//     // Find the area using macros
+//     area = AREA(l1, l2);
+ 
+//     // Print the area
+//     printf("Area of rectangle"
+//            " is: %d",
+//            area);
+ 
+//     return 0;
+// }
+
+// // C program to illustrate macros
+// #include <stdio.h>
+
+// // Macro definition
+// #define DATE 31
+
+// // Driver Code
+// int main()
+// {
+// 	// Print the message
+// 	printf("Lockdown will be extended"
+// 		" upto %d-MAY-2020",
+// 		DATE);
+
+// 	return 0;
+// }
+
+
+// C program to check if a number is even or not using goto statement
+// #include <stdio.h>
+
+// // function to check even or not
+// void checkEvenOrNot(int num)
+// {
+// 	if (num % 2 == 0)
+// 		// jump to even
+// 		goto even;
+// 	else
+// 		// jump to odd
+// 		goto odd;
+
+// even:
+// 	printf("%d is even", num);
+// 	// return if even
+// 	return;
+// odd:
+// 	printf("%d is odd", num);
+// }
+
+// int main()
+// {
+// 	int num = 26;
+// 	checkEvenOrNot(num);
+// 	return 0;
+// }
+
+
+// C program to print numbers from 1 to 10 using goto statement
+// #include <stdio.h>
+
+// // function to print numbers from 1 to 10
+// void printNumbers()
+// {
+// 	int n = 1;
+// label:
+// 	printf("%d ", n);
+// 	n++;
+// 	if (n <= 10)
+// 		goto label;
+// }
+
+// // Driver program to test above function
+// int main()
+// {
+// 	printNumbers();
+// 	return 0;
+// }
+
+
+// // Ternary Operator
+// #include <stdio.h>
+
+// int main() {
+//     int age;
+//     printf("Enter your age: ");
+//     scanf("%d", &age);
+
+//     (age >= 18) ? printf("You can vote") : printf("You can't vote");
+
+//     return 0;
+// }
+
+// // Write a C function isodd(num) that accepts an integer argument and returns 1 if the argument is odd and 0 otherwise.
+// #include <stdio.h>
+// int isOdd(int num) {
+//     if (num % 2 == 0) {
+//         return 0;
+//     } 
+//     else {
+//         return 1;
+//     }    
+// }
+
+// int main () {
+//     int num = 3;
+//     printf("%d", isOdd(num));
+// }
+
+
+
+// // Write a C program that invokes this function to generate numbers between the given range.
+// #include <stdio.h>
+// void generateNumber(int start, int end) {
+//     for (int i = start; i < end; i++) {
+//         printf("%d ", i);
+//     }
+// }
+
+// int main() {
+//     int start = 3, end  = 8;
+//     generateNumber(start, end);
+//     return 0;
+// }
+
+
+// Define an Array. How do we declare and initialize a single-dimensional array and a 2-dimensional array ? Explain with an example for each.
+// #include <stdio.h>
+
+// int main() {
+//     int arr[3][2] = {{2, 2}, {4, 5}, {8, 9}};
+
+//     // Iterate over rows
+//     for (int i = 0; i < 3; i++) {
+//         // Iterate over columns
+//         for (int j = 0; j < 2; j++) {
+//             // Print the element at current row and column
+//             printf("%d ", arr[i][j]);
+//         }
+//         // Move to the next line after printing all elements in the current row
+//         printf("\n");
+//     }
+
+//     return 0;
+// }
+
+
+
+// // Write a C program to implement STRING COPY operation that copies a string ‘‘str1’’ to another string ‘‘str2’’ without using library function.
+// #include <stdio.h>
+
+// void stringCopy(char str1[], char str2[]) {
+//     int i = 0;
+    
+//     // Copy characters from str1 to str2 until null character is encountered
+//     while (str1[i] != '\0') {
+//         str2[i] = str1[i];
+//         i++;
+//     }
+    
+//     // Add null character at the end of str2
+//     str2[i] = '\0';
+// }
+
+// int main() {
+//     char str1[100];
+//     char str2[100];
+
+//     printf("Enter a string: ");
+//     scanf("%s", str1);
+
+//     // Call the stringCopy() function to copy str1 to str2
+//     stringCopy(str1, str2);
+
+//     printf("Copied string: %s\n", str2);
+
+//     return 0;
+// }
+
+
+// Write a C program to mantain a record of ‘‘n’’ student details using an array of structures with structure-variables (Rollnumber, Name, Marks1, Marks2, Marks3, Marks4 and Grade). Define each field of the structure with appropriate datatype. Print the marks of the student of given Rollnumber as input.
+#include <stdio.h>
+
+// Student structure to store student details
+// Roll number, name, marks in 4 subjects, and grade
+// struct student {
+//     int rollnumber;
+//     char name[20];
+//     int marks1, marks2, marks3, marks4;
+//     char grade;
+// };
+
+// // Main function to read student details and print them
+// int main() {
+//     int n;
+    
+//     // Prompt the user to enter the number of students
+//     printf("Enter number of students: ");
+//     scanf("%d", &n);
+    
+//     // Declare an array of 'student' structures to store student details
+//     struct student students[n];
+    
+//     // Loop to input details of each student
+//     for (int i = 0; i < n; i++) {
+//         printf("Enter the details of student %d: ", i + 1);
+        
+//         // Read the details from the user and store them in the corresponding fields of the 'students' array
+//         scanf("%d %s %d %d %d %c", &students[i].rollnumber, students[i].name, &students[i].marks1, &students[i].marks2, &students[i].marks3, &students[i].grade);
+//     }
+    
+//     // Print a newline for separation between input and output
+//     printf("\n");
+    
+//     // Loop to print the details of each student
+//     for (int i = 0; i < n; i++) {
+//         // Print the details of each student, accessing the fields of the 'students' array
+//         printf("Roll number: %d\n", students[i].rollnumber);
+//         printf("Name: %s\n", students[i].name);
+//         printf("Marks1: %d\n", students[i].marks1);
+//         printf("Marks2: %d\n", students[i].marks2);
+//         printf("Marks3: %d\n", students[i].marks3);
+//         printf("Marks4: %d\n", students[i].marks4);
+//         printf("Grade: %c\n", students[i].grade);
+//     }
+    
+//     return 0;
+// }
+
+
+
+// #include <stdio.h>
+
+// struct student
+// {
+//     int rollnumber;
+//     char name[20];
+//     int Physics, Chemistry, Maths, Biology;
+//     char grade;
+// };
+
+// int main() {
+//     int n;
+//     printf("Enter number of students: ");
+//     scanf("%d", &n);
+
+//     struct student students[n];
+    
+//     for (int i = 0; i < n; i++) {
+//         printf("Enter the details of the students: ", i+1);
+//         scanf("%d %s %d %d %d %d %c", &students[i].rollnumber, students[i].name, &students[i].Physics, &students[i].Chemistry, &students[i].Maths, &students[i].Biology, &students[i].grade);
+//     }
+
+//     for (int i = 0; i < n; i++) {
+//         printf("Roll Number: %d\n", students[i].rollnumber);
+//         printf("Name: %s\n", students[i].name);
+//         printf("Physics Marks: %d\n", students[i].Physics);
+//         printf("Chemistry Marks: %d\n", students[i].Chemistry);
+//         printf("Maths Marks: %d\n", students[i].Maths);
+//         printf("Grade: %d\n", students[i].Biology);
+//         printf("Grade: %c\n", students[i].grade);
+//     }
+    
+// }
+
